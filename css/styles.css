@@ -41,12 +41,12 @@ header{
  height: 2em;
  width: 40vw;
  margin-top: 20px;
+ border-radius: 4px;
  padding: 15px;
  width: 100%;
 }
 .buscador:hover{
  cursor: pointer;
- background-color: #dbdbdb;
 }
 .elipsis{
  padding-top: 5em;
@@ -91,8 +91,6 @@ h2{
  color: white;
  font-family: "Roboto Slab", serif;
  font-weight: normal;
- padding: .5em;
- font-size: 1.2em;
 }
 p{
   color: white;
@@ -112,7 +110,7 @@ font-size: 1.4em;
  color: #303030;
 }
 button{
- margin-top: 1em;
+ 
  height: 2em;
  border: none;
  border-radius: 3px;
@@ -124,17 +122,10 @@ button:hover{
  background-color: #3280c2;
  cursor: pointer;
 }
-input{
- border-radius: 3px;
- border: none;
-}
-input[type=text]:hover,input[type=list]:hover{
- background-color: #dbdbdb;
-}
 /*Contacto*/
 .tit_contacto{
  text-align: left;
- margin-left: 9.4%;;
+ margin-left: 5em;
  padding-top: 1em;
 }
 .inputs_contacto{
@@ -144,20 +135,19 @@ input[type=text]:hover,input[type=list]:hover{
  height: 8vh;
  margin-left: 10em;
  width: 50%;
-	margin-left: 20%;
+ border-radius: 3px;
  padding-left: 3px;
  padding: 1px 0px 0px 3px;
 }
 .input_form{
  height: 3em;
- border-radius: 3px;
+ border-radius: 4px;
  margin-left: 20%;
  padding: 1px 0px 0px 3px;
 }
 .enviar_contacto{
  float: right;
  width: 100px;
- margin-right: 11em
 }
 .datos_contacto{
  height: 35vh;
@@ -169,52 +159,112 @@ iframe{
  width: 100%;
 }
 /*Calendario*/
+.filtrar-por{
+  color: #3280c2;
+ text-align: right;
+ margin-top: 1em;
+ margin-right: 1em;
+  }
 .contenedor-calendario{
  display: flex;
- width: auto;
  margin: auto;
- padding-top: 1.25em;
- padding-bottom: 1.25em;
- padding-left: 18.75em;
- padding-right: 3.125em;
+ padding-top: 3em;
+ padding-bottom: 1em;
+ padding-left: 30em;
+ padding-right: 10em;
 }
 .contenedor-calendario img{
  width: auto;
- width: 12.5em;
- height: 12.5em;
- margin-bottom: 1.875em;
- border-radius: 1.875em;
- box-shadow: 0 1.25em 1.25em black;
+
+ height: 12em;
+ margin-bottom: 1em;
+ border-radius: 2em;
+ margin: 1em;
+ box-shadow: 0 20px 20px black;
 }
 .calendario-textoimagen2{
  margin: auto;
- font-size: 0.9375em;
+ font-size: 0,3em;
  color: white;
- padding-right: 18.75em;
+ padding-right: 13em;
 }
-.inscribirse-calendario{
- display: inline-block;
- margin-bottom: 0.625em;
- margin-top: 0.625em;
- padding: 0.5em;
- border-radius: 3px;
- color: white;
- width: 6.25em;
+
+
+/* css de calendario-con-filtrar */
+#cursos img{
+  max-width: 30%;
+  padding: 1em;
+  border-radius: 2em;
+          
 }
-.filtrar-por{
-  color: white;
-  text-align: left;
-  margin-top: 0.75em;
-  margin-left: 0.9375em;
+#cursos{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+   
 }
-select{
- border-radius: 3px;
+#cursos article{
+  width: calc(50%);
+  padding: 3em;
+  border: 1px solid #21cdf8;
 }
-select:hover{
- cursor: pointer;
- background-color: #dbdbdb;
+/*nombre de establecimiento */
+
+
+#h22{
+  margin-top: 10em;
+  margin: 5em;
 }
-/*Establecimientos*/
+
+#establecimientoboton{
+  margin-left: 20em;
+}
+
+#fotogrande p{
+  
+  font-size: 3em;
+}
+
+#provinciagrande img{
+margin: 1em;
+margin-left: 20em;
+justify-content: center;
+align-items: center;
+  float: left;
+
+}
+
+#escuelas{
+  display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  
+}
+.provincia1{
+  width: calc(50%);
+  padding: 5em;
+ 
+}
+.provincia2{
+  width: calc(50%);
+  padding: 5em;
+  
+}
+.provincia1 img{
+ max-width: 20%;
+ padding-bottom: 2em;
+ 
+}
+
+.provincia2 img{
+   
+ max-width: 20%;
+}
+
+
+
+
+/*Establecimientos
 .contenedor-establecimiento1{
  display: flex;
  padding: 1em;
@@ -250,7 +300,7 @@ margin-bottom: 2em;
 .textoimagen2{
  margin: auto;
  font-size: 1.5em;
- padding-right: 3em;
+ padding-right: 3em; 
 }
 /*index*/
 .slider {
@@ -280,13 +330,11 @@ margin-bottom: 2em;
  display: flex;
  flex-direction: column;
  align-items: center;
- padding: 1.3em;
 }
 .pasos-incripcion img {
- height: 18vh;
- width: 18vh;
+ height: 20vh;
+ width: 20vh;
 }
-
 .boton {
  display: inline-block;
  width: 23vh;
